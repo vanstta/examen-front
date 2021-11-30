@@ -13,7 +13,9 @@
 
     background-image: url(../img/bg-simplify-section-desktop.svg);
 } */
-
+.containerHeader h1 {
+    display: none;
+}
 header {
     height: 50px;
     display: flex;
@@ -22,9 +24,11 @@ header {
     padding: 50px;
     font-size: 13px;
 }
-/* .hamburger {
+
+.hamburger {
     display: none;
-} */
+}
+
 header ul {
     list-style-type: none;
     display: flex;
@@ -128,6 +132,9 @@ header ul li a{
     
 }
 
+.circleContainer {
+    display: none;
+}
 
 .containerList {
     display: flex;
@@ -399,8 +406,11 @@ form button {
 @media screen and (max-width: 415px) {
     .hamburger {
         display: flex;
+        position: absolute;
+        right: 30px;
+        top: 50px;
     }
-
+    
     header {
         justify-content: space-between;
     }
@@ -498,11 +508,12 @@ form button {
     }
    
     .containerList h4 {
-        background-color: rgb(255, 234, 196);
+        background-color: rgb(255, 239, 234);
         padding-left: 0px;
         border-radius: 100px 0 0 100px;
         height: 38px;
         width: calc(100vw - 30px);
+        margin-bottom: 17px;
         
     }
 
@@ -515,8 +526,25 @@ form button {
     }
     
     /* -----section 3----- */
+    .circleContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .circle {
+        width: 100px;
+    }
     .hide {
         display: none;
+    }
+
+    .section3 h3 {
+        font-size: 35px;
+       
+    }
+    .cardButton {
+        
+        bottom: 70px;
     }
 
         /* -----section 4----- */
@@ -537,4 +565,52 @@ form button {
        top: initial;
        bottom: 25px;
    }
+   /* -----section 5------ */
+
+   .section5 {
+        
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+        
+   }
+   .menuFooter, .links {
+       display: none;
+   }
+   .formFooter {
+       justify-content: space-between;
+       align-items: center;
+       padding-bottom: 30px;
+   }
+
+   .formP {
+        position: relative;
+        top:18vh;
+        
+   }
+   .imgLogo{
+       width: 150px;
+       padding-bottom: 20px;
+   }
+   /* -----page form----- */
+        .containerMsg {
+        width: 90%;
+        margin-left: 5%;
+        height: 20vh;
+    
+    }
+    .pageForm {
+        text-align: center;
+        padding-top: 35vh;
+    }
+    .containerMsg h1 {
+        font-size: 30px;
+    }
+
+    .pageForm a img{
+        margin-bottom: 20px;
+    }
+
 }
