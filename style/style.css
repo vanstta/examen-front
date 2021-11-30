@@ -43,6 +43,20 @@ header ul li a{
     font-weight: 550;
 }
 
+header ul li a:hover {
+    color: #F3603B;
+}
+
+header ul li {
+    transition: all 300ms;
+    
+ 
+}
+
+header ul li:hover {
+    transform: scale(1.25);
+}
+
 .start {
     background-color: #F3603B;
     border: none;
@@ -55,8 +69,15 @@ header ul li a{
     bottom: calc(45px/3);
     cursor: pointer;
     font-weight: bold;
+    
+    
 }
 
+.start:hover {
+    border: solid 3px #F3603B ;
+    box-shadow: 0 0 10px #f56541, 0 0 15px #f56541, 0 0 15px #f56541;
+   
+}
 /* ---------section1---------- */
 
 .section1 {
@@ -94,6 +115,7 @@ header ul li a{
     top: 30px;
     width: 35%;
 }
+
 
 .section1 img {
     position: relative;
@@ -172,6 +194,7 @@ header ul li a{
     padding: 10px 20px;
     font-size: 16px;
     text-align: center;
+    font-weight: bold;
 }
 
 /* -----SECCION 3----- */
@@ -270,6 +293,12 @@ header ul li a{
     top: 0;
 }
 
+.button4:hover {
+
+    border: solid 3px #ffffff ;
+    box-shadow: 0 0 10px #ffe4dd, 0 0 15px #ffe4dd, 0 0 15px #ffe4dd;
+
+}
 /* -----section5----- */
 
 .section5 {
@@ -358,6 +387,11 @@ form button {
     cursor: pointer;
 }
 
+form button:hover {
+    border: solid 3px #F3603B ;
+    box-shadow: 0 0 10px #f56541, 0 0 15px #f56541, 0 0 15px #f56541;
+}
+
 .formP {
     color: #8C8C94;
     font-size: 12px;
@@ -369,6 +403,11 @@ form button {
     height: 100vh;
     background-color: #242E53;
     padding-top: 30vh;
+    text-align: center;
+}
+
+.pageForm a img{
+    margin-bottom: 20px;
 }
 
 .containerMsg {
@@ -602,15 +641,13 @@ form button {
     
     }
     .pageForm {
-        text-align: center;
+        
         padding-top: 35vh;
     }
     .containerMsg h1 {
         font-size: 30px;
     }
 
-    .pageForm a img{
-        margin-bottom: 20px;
-    }
+   
 
 }
