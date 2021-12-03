@@ -376,7 +376,7 @@ form div input[type="email"] {
     padding-left: 10px;
 }
 
-form button {
+form .buttonForm {
     height: 45px;
     width: 65px;
     border: none;
@@ -387,7 +387,7 @@ form button {
     cursor: pointer;
 }
 
-form button:hover {
+form .buttonForm:hover {
     border: solid 3px #F3603B ;
     box-shadow: 0 0 10px #f56541, 0 0 15px #f56541, 0 0 15px #f56541;
 }
